@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B6C581B27922FAA00E2366D /* Sportsman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C581A27922FAA00E2366D /* Sportsman.swift */; };
+		7B6C581D27922FE100E2366D /* BasketballPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C581C27922FE100E2366D /* BasketballPlayer.swift */; };
+		7B6C581F2792300A00E2366D /* SoccerPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C581E2792300A00E2366D /* SoccerPlayer.swift */; };
+		7B6C58212792303200E2366D /* Swimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C58202792303200E2366D /* Swimmer.swift */; };
+		7B6C58242792311600E2366D /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C58232792311600E2366D /* Decorator.swift */; };
+		7B6C58262792319900E2366D /* ProfessionalSportsmanDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C58252792319900E2366D /* ProfessionalSportsmanDecorator.swift */; };
+		7B6C58282792322500E2366D /* AmateurSportsmanDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C58272792322500E2366D /* AmateurSportsmanDecorator.swift */; };
+		7B6C582B2792326800E2366D /* DecoratorClientUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C582A2792326800E2366D /* DecoratorClientUseCase.swift */; };
 		7B998F162791DE8C0092E43B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B998F152791DE8C0092E43B /* main.swift */; };
 		7B998F1F2791DEB10092E43B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B998F1E2791DEB10092E43B /* FirstViewController.swift */; };
 		7B998F212791DEC10092E43B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B998F202791DEC10092E43B /* SecondViewController.swift */; };
@@ -33,6 +41,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B6C581A27922FAA00E2366D /* Sportsman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sportsman.swift; sourceTree = "<group>"; };
+		7B6C581C27922FE100E2366D /* BasketballPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballPlayer.swift; sourceTree = "<group>"; };
+		7B6C581E2792300A00E2366D /* SoccerPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerPlayer.swift; sourceTree = "<group>"; };
+		7B6C58202792303200E2366D /* Swimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swimmer.swift; sourceTree = "<group>"; };
+		7B6C58232792311600E2366D /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		7B6C58252792319900E2366D /* ProfessionalSportsmanDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalSportsmanDecorator.swift; sourceTree = "<group>"; };
+		7B6C58272792322500E2366D /* AmateurSportsmanDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmateurSportsmanDecorator.swift; sourceTree = "<group>"; };
+		7B6C582A2792326800E2366D /* DecoratorClientUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorClientUseCase.swift; sourceTree = "<group>"; };
 		7B998F122791DE8C0092E43B /* Design Patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Design Patterns"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B998F152791DE8C0092E43B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7B998F1E2791DEB10092E43B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +74,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B6C581827922F4700E2366D /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				7B6C58292792324600E2366D /* Client */,
+				7B6C58222792310600E2366D /* Decorators */,
+				7B6C581927922F4C00E2366D /* Component */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		7B6C581927922F4C00E2366D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7B6C581A27922FAA00E2366D /* Sportsman.swift */,
+				7B6C581C27922FE100E2366D /* BasketballPlayer.swift */,
+				7B6C581E2792300A00E2366D /* SoccerPlayer.swift */,
+				7B6C58202792303200E2366D /* Swimmer.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7B6C58222792310600E2366D /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				7B6C58232792311600E2366D /* Decorator.swift */,
+				7B6C58252792319900E2366D /* ProfessionalSportsmanDecorator.swift */,
+				7B6C58272792322500E2366D /* AmateurSportsmanDecorator.swift */,
+			);
+			path = Decorators;
+			sourceTree = "<group>";
+		};
+		7B6C58292792324600E2366D /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				7B6C582A2792326800E2366D /* DecoratorClientUseCase.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 		7B998F092791DE8C0092E43B = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +188,7 @@
 		7B998F2F279203780092E43B /* Structural Design Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				7B6C581827922F4700E2366D /* Decorator */,
 				7B998F30279203900092E43B /* Adapter */,
 			);
 			path = "Structural Design Patterns";
@@ -232,15 +288,23 @@
 			files = (
 				7B998F2B2791DF2D0092E43B /* ViewControllerCreator.swift in Sources */,
 				7B998F232791DED50092E43B /* ViewControllerProtocol.swift in Sources */,
+				7B6C58212792303200E2366D /* Swimmer.swift in Sources */,
 				7B998F272791DF060092E43B /* FirstViewControllerCreator.swift in Sources */,
+				7B6C581F2792300A00E2366D /* SoccerPlayer.swift in Sources */,
+				7B6C582B2792326800E2366D /* DecoratorClientUseCase.swift in Sources */,
 				7B998F392792049C0092E43B /* SwiftAdaptee.swift in Sources */,
 				7B998F212791DEC10092E43B /* SecondViewController.swift in Sources */,
 				7B998F162791DE8C0092E43B /* main.swift in Sources */,
 				7B998F1F2791DEB10092E43B /* FirstViewController.swift in Sources */,
 				7B998F2E2791E0110092E43B /* FactoryClientUseCase.swift in Sources */,
+				7B6C581D27922FE100E2366D /* BasketballPlayer.swift in Sources */,
+				7B6C58262792319900E2366D /* ProfessionalSportsmanDecorator.swift in Sources */,
 				7B998F292791DF100092E43B /* SecondViewControllerCreator.swift in Sources */,
+				7B6C581B27922FAA00E2366D /* Sportsman.swift in Sources */,
+				7B6C58242792311600E2366D /* Decorator.swift in Sources */,
 				7B998F33279203F30092E43B /* AdapterClientUseCase.swift in Sources */,
 				7B998F36279204250092E43B /* ObjcAdapter.swift in Sources */,
+				7B6C58282792322500E2366D /* AmateurSportsmanDecorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

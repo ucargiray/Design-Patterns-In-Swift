@@ -21,4 +21,19 @@ let swiftCodeAdaptee = SwiftAdaptee()
 swiftCodeAdaptee.createCodeForSwift()
 adapterClient1.registerButtonClicked(use: ObjcAdapter(adaptee: swiftCodeAdaptee))
 
+print("---------------------------")
+
+// Decorator Usage:
+
+let decoratorClient1 = DecoratorClientUseCase()
+
+let professionalSwimmer = ProfessionalSportsmanDecorator(sports: [Swimmer()])
+let amateurBasketballPlayer = AmateurSportsmanDecorator(sports: [BasketballPlayer()])
+let amateurSoccerPlayer = AmateurSportsmanDecorator(sports: [SoccerPlayer()])
+
+let person1 = Decorator(sports: [amateurBasketballPlayer, professionalSwimmer , amateurSoccerPlayer])
+let person2 = Decorator(sports: [amateurSoccerPlayer])
+
+decoratorClient1.practice(with: person1)
+
 
